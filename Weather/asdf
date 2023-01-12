@@ -1,0 +1,68 @@
+<th style="width: 22%;">Cloud_pct</th>
+<th style="width: 22%;">Feels_like</th>
+<th style="width: 22%;">Humidity</th>
+<th style="width: 22%;">Max_temp</th>
+<th style="width: 22%;">Min_temp</th>
+<th style="width: 22%;">Sunrise</th>
+<th style="width: 22%;">Sunset</th>
+<th style="width: 22%;">Temp</th>
+<th style="width: 22%;">Wind_degrees</th>
+<th style="width: 22%;">Wind_speed</th>
+
+  cloud_pct: response.cloud_pct
+  temp: response.temp
+  feels_like: response.feels_like
+  humidity: response.humidity
+  min_temp: response.min_temp
+  max_temp: response.max_temp
+  wind_speed: response.wind_speed
+  wind_degrees: response.wind_degrees
+  sunrise: response.sunrise
+  sunset: response.sunset
+
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+      <div class="card-header py-3">
+        <h4 class="my-0 fw-normal">Pro</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">
+          $15<small class="text-muted fw-light">/mo</small>
+        </h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>20 users included</li>
+          <li>10 GB of storage</li>
+          <li>Priority email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="w-100 btn btn-lg btn-primary">
+          Get started
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+      <div class="card-header py-3">
+        <h4 class="my-0 fw-normal">Temperature</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">
+          $0<small class="text-muted fw-light">/mo</small>
+        </h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Temperature is <span id="temp"></span></li>
+          <li>Minimum Tempertaure is <span id="min_temp"></span></li>
+          <li>Maximum Tempertaure is <span id="max_temp"></span></li>
+          <li>Cloud PCT is <span id="cloud_pct"></span></li>
+        </ul>
+        <button
+          type="button"
+          class="w-100 btn btn-lg btn-outline-primary"
+        >
+          Sign up for free
+        </button>
+      </div>
+    </div>
+  </div>
